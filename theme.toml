@@ -1,0 +1,12 @@
+name = "Minimis"
+license = "MIT"
+licenselink = "https://github.com/kirillbobyrev/minimis/blob/master/LICENSE"
+description = "Minimalistic theme for personal blogging"
+homepage = "http://github.com/kirillbobyrev/minimis"
+tags = ["blog", "personal"]
+features = []
+min_version = "0.111.3"
+
+[author]
+  name = "Kirill Bobyrev"
+  homepage = "https://kirillbobyrev.com/"
