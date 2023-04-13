@@ -3,9 +3,11 @@
   <h1>
     {{ .Title }}
   </h1>
+  {{ if .Date }}
   <time datetime="{{ .Date }}" pubdate>
     {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
   </time>
+  {{ end }}
   {{/* TODO: Add tags.
   {{ with .getterms "tags" }}
   <ul id="tags">
