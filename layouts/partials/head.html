@@ -2,17 +2,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
-  {{ .Title }} | {{ .Site.Title }}
+  {{ with .Title }}
+    {{ . }} |
+  {{ end }}
+  {{ .Site.Title }}
 </title>
 
-{{ with .Site.Params.author }}
-  <meta name="author" content="{{ . }}">
-{{ end }}
-{{ with .Site.Params.description }}
-  <meta name="description" content="{{ . }}">
-{{ end }}
-{{ with .Site.Params.keywords }}
-  <meta name="keywords" content={{ delimit . "," }}>
+{{ with .Site.Params }}
+  {{ with .author }}
+    <meta name="author" content="{{ . }}">
+  {{ end }}
+  {{ with .description }}
+    <meta name="description" content="{{ . }}">
+  {{ end }}
+  {{ with .keywords }}
+    <meta name="keywords" content={{ delimit . "," }}>
+  {{ end }}
 {{ end }}
 
 {{- partial "helpers/favicon.html" . -}}
@@ -25,10 +30,5 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Flex|Fira+Code">
 <link rel="stylesheet" href="/css/style.css">
-
-{{/* Enable KaTeX only when explicitly required to reduce loading time. */}}
-{{ if .Params.math }}
-  {{ partial "helpers/katex.html" . }}
-{{ end }}

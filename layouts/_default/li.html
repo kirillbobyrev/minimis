@@ -1,4 +1,8 @@
 <li>
-  {{ .Date | dateFormat "2006-01-02" }}
-  <a href="{{ .Permalink }}"> {{ .Title }}</a>
+  <article>
+    <time datetime="{{ . }}" pubdate>
+      {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
+    </time>
+    <a href="{{ .RelPermalink }}"> {{ .Title }}</a>
+  </article>
 </li>

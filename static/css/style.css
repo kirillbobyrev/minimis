@@ -1,4 +1,13 @@
 body {
-  margin: 0 auto;
-  max-width: 50em;
+  font-family: "Roboto Flex";
+  margin: auto;
+  max-width: 45em;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  font-family: "Fira Code";
 }
