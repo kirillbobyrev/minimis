@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
     {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
+  </head>
+  <body>
+    <header>
+      {{- partialCached "header.html" . -}}
+    </header>
+    <main role="main">
         {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+    </main>
+    <footer class="footer fixed-bottom">
+      {{- partialCached "footer.html" . -}}
+    </footer>
+  </body>
 </html>
