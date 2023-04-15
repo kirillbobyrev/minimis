@@ -1,8 +1,8 @@
 {{ define "main" }}
-  {{ .Content }}
-  <ul>
-    {{ range .Pages }}
-      {{ .Render "li" }}
-    {{ end }}
-  </ul>
+{{ .Content }}
+<ul>
+  {{ range .Pages }}
+  {{ .Render "li" }}
+  {{ end }}
+</ul>
 {{ end }}

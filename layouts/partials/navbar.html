@@ -1,3 +1,5 @@
-{{- range .Site.Menus.main }}
+<nav>
+  {{- range .Site.Menus.main }}
   <a href="{{ .URL }}">{{ .Name }}</a>
-{{- end }}
+  {{- end }}
+</nav>

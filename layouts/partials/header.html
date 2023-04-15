@@ -1,6 +1,6 @@
 {{ with .Site }}
-  <a href="{{ .BaseURL | relURL }}">
-    <h2> {{ .Title }} </h2>
-  </a>
-  {{- partial "navbar.html" . -}}
+<a href="{{ .BaseURL | relURL }}">
+  <h2> {{ .Title }} </h2>
+</a>
+{{- partial "navbar.html" . -}}
 {{ end }}

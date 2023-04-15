@@ -1,5 +1,5 @@
 +++
-title = '{{ replace .Name "-" " " | title }}'
+title = "{{ replace .Name "-" " " | title }}"
 menu = "main"
 # Optionally set the weight for sorting main menu entries.
 # weight = X

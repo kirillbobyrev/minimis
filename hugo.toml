@@ -1,2 +1,5 @@
 [params]
   dateDisplayFormat = ":date_medium"
+  # Insert your Mastodon username for link verification.
+  # (https://docs.joinmastodon.org/user/profile/#verification)
+  # mastodon = "username"

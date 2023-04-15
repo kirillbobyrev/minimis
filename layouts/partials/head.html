@@ -3,21 +3,21 @@
 
 <title>
   {{ with .Title }}
-    {{ . }} |
+  {{ . }} |
   {{ end }}
   {{ .Site.Title }}
 </title>
 
 {{ with .Site.Params }}
-  {{ with .author }}
-    <meta name="author" content="{{ . }}">
-  {{ end }}
-  {{ with .description }}
-    <meta name="description" content="{{ . }}">
-  {{ end }}
-  {{ with .keywords }}
-    <meta name="keywords" content={{ delimit . "," }}>
-  {{ end }}
+{{ with .author }}
+<meta name="author" content="{{ . }}">
+{{ end }}
+{{ with .description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+{{ with .keywords }}
+<meta name="keywords" content={{ delimit . "," }}>
+{{ end }}
 {{ end }}
 
 {{- partial "helpers/favicon.html" . -}}
@@ -27,8 +27,13 @@
 {{ template "_internal/opengraph.html" . }}
 
 {{ range .AlternativeOutputFormats -}}
-  {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+{{ printf `
+<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{ end -}}
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Code">
 <link rel="stylesheet" href="/css/style.css">
+
+{{ with .Site.Params.mastodon }}
+<link href="https://social.example.com/@{{ . }}" rel="me">
+{{ end }}
