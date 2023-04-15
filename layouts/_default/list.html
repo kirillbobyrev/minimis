@@ -1,8 +1,19 @@
 {{ define "main" }}
 {{ .Content }}
+{{ if .Data.Singular }}
+{{ end }}
+{{ if .Pages }}
 <ul>
   {{ range .Pages }}
-  {{ .Render "li" }}
+  {{ .Render "post" }}
   {{ end }}
 </ul>
+{{ end }}
+{{ if not .Data.Singular }}
+<ul>
+  {{ range .Site.Taxonomies.tags }}
+  <li><a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a> {{ .Count }}</li>
+  {{ end }}
+</ul>
+{{ end }}
 {{ end }}

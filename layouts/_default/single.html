@@ -8,15 +8,11 @@
     {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
   </time>
   {{ end }}
-  {{/* TODO: Add tags.
-  {{ with .getterms "tags" }}
   <ul id="tags">
-    {{ range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ range (.GetTerms "tags") }}
+    <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
     {{ end }}
   </ul>
-  {{ end }}
-  */}}
   {{ .Content }}
 </article>
 {{ end }}

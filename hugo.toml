@@ -5,4 +5,5 @@
   # Insert your Mastodon username for link verification.
   # (https://docs.joinmastodon.org/user/profile/#verification)
   # mastodon = "username"
+  favicon = "/icons/favicon.ico"
   dateDisplayFormat = ":date_medium"
