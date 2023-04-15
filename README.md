@@ -14,9 +14,9 @@ This theme is heavily inspired by [bearblog](https://bearblog.dev/) and
 [hugo-bearblog](https://github.com/janraasch/hugo-bearblog), but is focused on
 features that I was missing and wanted to change/adjust to my liking. bearblog
 is a prime example of something that looks very good with minimal CSS
-configuration, so I realized there is no need to use a complicated framework to
-make it look nice. I'm also not an expert in UI and front-end Web development,
-so I avoid complicated things.
+configuration, so I realized there is no need to use a complicated framework if
+I want it to look good. I'm also not an expert in UI and front-end Web
+development, so I avoid complicated things.
 
 ## [Live demo](https://kirillbobyrev.com)
 
