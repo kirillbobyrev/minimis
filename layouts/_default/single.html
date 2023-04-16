@@ -3,16 +3,23 @@
   <h1>
     {{ .Title }}
   </h1>
+
   {{ if .Date }}
+  Published on
   <time datetime="{{ .Date }}" pubdate>
     {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
   </time>
   {{ end }}
-  <ul id="tags">
+
+  {{ if gt (len (.GetTerms "tags")) 0}}
+  <ul>
     {{ range (.GetTerms "tags") }}
     <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
     {{ end }}
   </ul>
+  {{ end }}
+
   {{ .Content }}
+
 </article>
 {{ end }}

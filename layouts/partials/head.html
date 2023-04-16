@@ -23,15 +23,21 @@
 {{- partial "helpers/favicon.html" . -}}
 
 {{ template "_internal/google_analytics.html" . }}
+
+{{ if .Site.Params.twitterCards }}
 {{ template "_internal/twitter_cards.html" . }}
+{{ end }}
+
+{{ if .Site.Params.opengraph }}
 {{ template "_internal/opengraph.html" . }}
+{{ end }}
 
 {{ range .AlternativeOutputFormats -}}
 {{ printf `
 <link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Code">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Code&display=swap">
 <link rel="stylesheet" href="/css/style.css">
 
 {{ with .Site.Params.mastodon }}

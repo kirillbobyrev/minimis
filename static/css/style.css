@@ -1,7 +1,10 @@
 body {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin: auto;
   max-width: 45em;
+  /* Make sure there is padding on small screens. */
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 img {

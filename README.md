@@ -18,7 +18,7 @@ configuration, so I realized there is no need to use a complicated framework if
 I want it to look good. I'm also not an expert in UI and front-end Web
 development, so I avoid complicated things.
 
-## [Live demo](https://kirillbobyrev.com)
+## [Live demo](https://kirillbobyrev.com) and [source code](htttps://github.com/kirillbobyrev/kirillbobyrev.com)
 
 I use this theme to power my personal website and it serves as the live demo +
 example website (check GitHub
