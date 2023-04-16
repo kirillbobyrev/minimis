@@ -11,9 +11,10 @@
   </time>
   {{ end }}
 
-  {{ if gt (len (.GetTerms "tags")) 0}}
+  {{ $tags := .GetTerms "tags" }}
+  {{ if gt $tags 0}}
   <ul>
-    {{ range (.GetTerms "tags") }}
+    {{ range $tags }}
     <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
     {{ end }}
   </ul>
