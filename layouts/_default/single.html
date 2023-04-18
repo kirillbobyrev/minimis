@@ -5,17 +5,19 @@
   </h1>
 
   {{ if .Date }}
-  Published on
-  <time datetime="{{ .Date }}" pubdate>
-    {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
-  </time>
+  <p>
+    Published on
+    <time datetime="{{ .Date }}" pubdate>
+      {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
+    </time>
+  </p>
   {{ end }}
 
   {{ $tags := .GetTerms "tags" }}
-  {{ if gt $tags 0}}
-  <ul>
+  {{ if $tags }}
+  <ul class="tag-cloud">
     {{ range $tags }}
-    <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
+    <li><a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a></li>
     {{ end }}
   </ul>
   {{ end }}

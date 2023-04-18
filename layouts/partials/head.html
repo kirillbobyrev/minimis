@@ -45,3 +45,7 @@
 {{ with .Site.Params.mastodon }}
 <link href="https://social.example.com/@{{ . }}" rel="me">
 {{ end }}
+
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}

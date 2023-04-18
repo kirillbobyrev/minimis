@@ -2,7 +2,6 @@ body {
   font-family: "Noto Sans", sans-serif;
   margin: auto;
   max-width: 45em;
-  /* Make sure there is padding on small screens. */
   padding: 1em;
 }
 
@@ -12,6 +11,10 @@ img {
 
 code {
   font-family: "Fira Code";
+}
+
+.header-link {
+  text-decoration: none;
 }
 
 .tag-cloud {
