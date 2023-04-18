@@ -20,7 +20,9 @@
 {{ end }}
 {{ end }}
 
-{{- partial "helpers/favicon.html" . -}}
+{{ with .Site.Params.favicon }}
+<link rel="icon" href="{{ . }}" type="image/x-icon">
+{{ end }}
 
 {{ template "_internal/google_analytics.html" . }}
 

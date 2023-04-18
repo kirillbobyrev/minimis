@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ .Content }}
+{{ $tag := .Title }}
+<p>
+Posts with <a href="/tags/{{ $tag | urlize }}">#{{ $tag }}</a> &mdash; <a href="/blog">remove filter</a>
+</p>
+<ul>
+  {{ range .Pages }}
+  {{ .Render "post" }}
+  {{ end }}
+</ul>
+{{ end }}

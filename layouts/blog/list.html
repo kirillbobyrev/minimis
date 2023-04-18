@@ -2,24 +2,20 @@
 
 {{ .Content }}
 
-{{ if .Pages }}
 <ul>
   {{ range .Pages }}
   {{ .Render "post" }}
   {{ end }}
 </ul>
-{{ end }}
 
 <!-- Show all tags -->
 <!-- TODO: Move to a separate layout. -->
-{{ if not .Data.Singular }}
 <small>
-  <ul>
+  <ul class="tag-cloud">
     {{ range .Site.Taxonomies.tags }}
-    <li><a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a>: {{ .Count }}</li>
+    <li><a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a></li>
     {{ end }}
   </ul>
 </small>
 
-{{ end }}
 {{ end }}

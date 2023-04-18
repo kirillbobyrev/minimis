@@ -3,8 +3,7 @@ body {
   margin: auto;
   max-width: 45em;
   /* Make sure there is padding on small screens. */
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
 }
 
 img {
@@ -13,4 +12,12 @@ img {
 
 code {
   font-family: "Fira Code";
+}
+
+.tag-cloud {
+  padding: 0;
+}
+
+.tag-cloud>li {
+  display: inline;
 }
