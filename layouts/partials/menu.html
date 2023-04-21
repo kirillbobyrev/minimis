@@ -1,5 +1,5 @@
 <nav>
   {{- range .Site.Menus.main }}
-  <a href="{{ .URL }}">{{ .Name }}</a>
+  <a href="{{ .URL | relURL }}" class="header-link">{{ .Name }}</a>
   {{- end }}
 </nav>
