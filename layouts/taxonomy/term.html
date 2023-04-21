@@ -4,7 +4,7 @@
 <p>
 Posts with <a href="/tags/{{ $tag | urlize }}">#{{ $tag }}</a> &mdash; <a href="/blog">remove filter</a>
 </p>
-<ul>
+<ul class="posts">
   {{ range .Pages }}
   {{ .Render "post" }}
   {{ end }}

@@ -24,3 +24,8 @@ code {
 .tag-cloud>li {
   display: inline;
 }
+
+.posts {
+  list-style: none;
+  padding-left: 0;
+}
