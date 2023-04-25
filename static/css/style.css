@@ -13,6 +13,11 @@ code {
   font-family: "Fira Code";
 }
 
+.posts {
+  list-style: none;
+  padding-left: 1rem;
+}
+
 .header-link {
   text-decoration: none;
 }
@@ -25,7 +30,6 @@ code {
   display: inline;
 }
 
-.posts {
-  list-style: none;
-  padding-left: 0;
+.code {
+  font-size: .9rem;
 }

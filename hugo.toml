@@ -2,7 +2,10 @@
   tag = 'tags'
 
 [params]
-  favicon = "/icons/favicon.ico"
+  # To enable icons for browser (favicon) and mobile, generate them through
+  # https://realfavicongenerator.net/, place under $HUGO_SITE_ROOT/static and
+  # set `icons` to `true`.
+  icons = false
   dateDisplayFormat = "Jan 2, 2006"
   # Insert your Mastodon username for link verification.
   # (https://docs.joinmastodon.org/user/profile/#verification)
