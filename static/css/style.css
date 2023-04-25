@@ -28,6 +28,7 @@ code {
 
 .tag-cloud>li {
   display: inline;
+  padding-right: .4rem;
 }
 
 .code {
