@@ -1,8 +1,8 @@
 <li>
   <article>
     <time datetime="{{ . }}" pubdate>
-      {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
+      <i>{{ .Date | dateFormat .Site.Params.dateDisplayFormat }}</i>
     </time>
-    <a href="{{ .RelPermalink }}"> {{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </article>
 </li>

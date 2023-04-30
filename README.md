@@ -27,3 +27,14 @@ the GitHub Actions-based workflow for automatic deployment to GitHub Pages with
 a custom domain. The goal of minimis is to let the Hugo site (user) focus on the
 content, so there is no configuration there, only the content and GitHub Pages
 integration.
+
+## Features
+
+- Tags and filtering
+- Custom links in the main menu
+- Google Analytics, Twitter cards
+- RSS
+- Favicons
+- Math rendering with KaTeX
+- Diagram rendering with Mermaid.js
+- Mastodon verification
