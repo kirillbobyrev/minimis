@@ -38,3 +38,10 @@ integration.
 - Math rendering with KaTeX
 - Diagram rendering with Mermaid.js
 - Mastodon verification
+
+## Performance
+
+Because of no additional JavaScript/CSS frameworks loading, the performance of
+Minimis is really good and scores highly on PageSpeed Insights:
+
+[![PageSpeed Insights](./.github/PageSpeed.png)](https://pagespeed.web.dev/analysis/https-kirillbobyrev-com/3rs7dkc9x6?form_factor=desktop)
