@@ -17,7 +17,7 @@ body {
     "Segoe UI Symbol";
   margin: auto;
   max-width: 45rem;
-  padding: 1em;
+  padding: 1rem;
   line-height: 1.4;
   background-color: var(--background);
   color: var(--text-color);
@@ -49,14 +49,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* TODO: This doesn't work? I want the column next to post titles to have the same width */
 time {
-  width: 12rem;
+  display: inline-block;
+  width: 7rem;
+  vertical-align: top;
 }
 
 .menu {
-  padding-bottom: .4rem;
-  padding-top: .4rem;
+  padding-bottom: .5rem;
   border-bottom: 1px solid var(--text-color);
 }
 
@@ -68,6 +68,10 @@ time {
   list-style: none;
   padding-left: 0;
   margin-top: 1.5rem;
+}
+
+.posts > li {
+  display: flex;
 }
 
 .title-link {
