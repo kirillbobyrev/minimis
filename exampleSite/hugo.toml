@@ -1,4 +1,4 @@
-baseURL = 'https://kirillbobyrev.github.io/'
+baseURL = 'https://kirillbobyrev.github.io/minimis'
 languageCode = 'en'
 enableEmoji = true
 theme = 'minimis'
@@ -12,5 +12,5 @@ themesDir = '../..'
 [markup]
   [markup.highlight]
     guessSyntax = true
-    style = "github"
+    style = 'github'
     tabWidth = 2
