@@ -3,10 +3,6 @@ on:
   push:
     branches:
       - main
-  # Regenerate the website every day: this will update the resume that is hosted
-  # and generated in a different repository.
-  schedule:
-    - cron: "0 0 * * *"
   # Allows to run this workflow manually from the Actions tab.
   workflow_dispatch:
 concurrency:
@@ -32,7 +28,7 @@ jobs:
         with:
           hugo-version: "latest"
       - name: Build website
-        run: hugo --gc --minify --source exampleSite
+        run: hugo --gc --minify --source exampleSite --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
