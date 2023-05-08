@@ -14,13 +14,13 @@
 
   {{ $tags := .GetTerms "tags" }}
   {{ if $tags }}
-  {{/* This should probably rather be a tag list with slightly different
-       styling. */}}
-  <ul class="tag-cloud">
-    {{ range $tags }}
-    <li><a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a></li>
-    {{ end }}
-  </ul>
+  <small>
+    <ul class="tag-cloud">
+      {{ range $tags }}
+      <li><a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </small>
   {{ end }}
 
   {{ .Content }}

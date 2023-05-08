@@ -39,6 +39,29 @@ integration.
 - Diagram rendering with Mermaid.js
 - Mastodon verification
 
+## Example site
+
+In order to build the example site and test your changes, run
+
+```shell
+$ env HUGO_THEMESDIR="../.." hugo server
+Start building sites …
+hugo v0.111.3+extended darwin/arm64 BuildDate=unknown
+
+                   | EN
+-------------------+-----
+  Pages            | 40
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     | 12
+  Processed images |  0
+  Aliases          |  0
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Built in 23 ms
+```
+
 ## Performance
 
 Because of no additional JavaScript/CSS frameworks loading, the performance of

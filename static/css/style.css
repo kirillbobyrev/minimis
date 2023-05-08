@@ -7,6 +7,7 @@
   --accent-light: #66a3ff;
   --background: #f5f5f5;
   --muted: #c0c7d0;
+  --muted-text: #8a8a8a;
   --line-height: 1.4;
 }
 
@@ -52,6 +53,7 @@ blockquote {
   font-style: italic;
 }
 
+/* TODO: Inline code is still displayed poorly. */
 code {
   font-family:
     ui-monospace,
@@ -80,9 +82,19 @@ time {
   display: inline-block;
   width: 7rem;
   vertical-align: top;
+  color: var(--muted-text);
+  font-style: italic;
 }
 
-/* Menu */
+/* Title and menu. */
+
+.blog-title {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: bold;
+  line-height: 2.6;
+}
 
 .menu {
   padding-bottom: .5rem;
@@ -98,19 +110,8 @@ time {
   transition: color 0.3s;
 }
 
+.blog-title:hover,
 .menu-link:hover {
-  text-decoration: none;
-}
-
-/* Titles */
-
-.title-link {
-  color: inherit;
-  text-decoration: none;
-  font-size: xx-large;
-}
-
-.title-link:hover {
   text-decoration: none;
 }
 
@@ -140,8 +141,8 @@ time {
 .tag-cloud>li>a {
   color: var(--text-color);
   background-color: var(--accent-bg);
-  border-radius: 12px;
-  padding: 1px 6px;
+  border-radius: 14px;
+  padding: 0 .5rem;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -149,4 +150,33 @@ time {
 .tag-cloud>li>a:hover {
   background-color: var(--accent-light);
   color: white;
+}
+
+main>small>.tag-cloud {
+  padding-top: .5rem;
+  line-height: 1.6;
+}
+
+/* Headings */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--muted);
+}
+
+/* Misc */
+
+/* TODO: The list ends up shifted too much to the right, likely need to reduce
+ * padding somehow. */
+ul:has(li>input) {
+  list-style: none;
 }

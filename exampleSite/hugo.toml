@@ -1,0 +1,16 @@
+baseURL = 'https://kirillbobyrev.github.io/'
+languageCode = 'en'
+enableEmoji = true
+theme = 'minimis'
+title = 'minimis'
+themesDir = '../..'
+
+[params]
+  author = 'Jon Doe'
+  description = 'minimalistic theme for Hugo'
+
+[markup]
+  [markup.highlight]
+    guessSyntax = true
+    style = "github"
+    tabWidth = 2

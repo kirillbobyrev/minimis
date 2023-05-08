@@ -1,8 +1,6 @@
 {{ with .Site }}
-<h2>
-  <a href="{{ .BaseURL | relURL }}" class="title-link">
-    {{ .Title }}
-  </a>
-</h2>
+<a href="{{ .BaseURL | relURL }}" class="blog-title">
+  {{ .Title }}
+</a>
 {{- partial "menu.html" . -}}
 {{ end }}
