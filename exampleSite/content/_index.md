@@ -10,3 +10,8 @@ a [Hugo](https://gohugo/io) theme for personal websites and blogs. Head over to
 
 For user documentation, setup guides and more check out the
 [README](https://github.com/kirillbobyrev/minimis/README.md).
+
+For a real world example of a website built with minimis, check out my personal
+website and blog at [kirillbobyrev.com](https://kirillbobyrev.com) with the
+source code available on GitHub at
+[kirillbobyrev/kirillbobyrev.com](https://github.com/kirillbobyrev/kirillbobyrev.com).

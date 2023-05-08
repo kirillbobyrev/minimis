@@ -1,5 +1,7 @@
 # minimis
 
+[![Build and deploy](https://github.com/kirillbobyrev/kirillbobyrev.com/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/kirillbobyrev/kirillbobyrev.com/actions/workflows/build-and-deploy.yml)
+
 Minimalistic theme for personal websites built with [Hugo](https://gohugo.io).
 The goal of minimis is to be:
 
@@ -18,15 +20,40 @@ configuration, so I realized there is no need to use a complicated framework if
 I want it to look good. I'm also not an expert in UI and front-end Web
 development, so I avoid complicated things.
 
-## [Live demo](https://kirillbobyrev.com) and [source code](https://github.com/kirillbobyrev/kirillbobyrev.com)
+## Live demo
 
-I use this theme to power my personal website and it serves as the live demo +
-example website (check GitHub
-[repository](https://github.com/kirillbobyrev/kirillbobyrev.com)). It also has
-the GitHub Actions-based workflow for automatic deployment to GitHub Pages with
-a custom domain. The goal of minimis is to let the Hugo site (user) focus on the
-content, so there is no configuration there, only the content and GitHub Pages
-integration.
+### exampleSite
+
+The example site is a good place to start. It showcases the features of the
+theme and is a good starting point for your own website. The source code for the
+example site is available under [exampleSite](./exampleSite/) and it is uploaded
+to <https://kirillbobyrev.github.io/minimis> on every commit to `main` branch
+through GitHub Actions workflow:
+[build-and-deploy.yml](./.github/workflows/build-and-deploy.yml).
+
+Whenever you make a change to the theme, you can test it by running
+
+```shell
+hugo server --source exampleSite --watch
+```
+
+if you are in the root directory of the repository or just
+
+```shell
+hugo server --watch
+```
+
+If you are in the `exampleSite` directory.
+
+### My personal website
+
+Minimis powers my personal website and blog at <https://kirillbobyrev.com>. I
+use it to write about software and hobbies. The source code for the website is
+available at
+[github.com/kirillbobyrev/kirillbobyrev.com](https://github.com/kirillbobyrev/kirillbobyrev.com).
+It doesn't differ much from the example site, but it has some customizations
+such as resume page, favicons and custom domain usage. It is a good example of a
+real-world usage of minimis.
 
 ## Features
 
@@ -42,29 +69,3 @@ integration.
 ## Example site
 
 In order to build the example site and test your changes, run
-
-```shell
-$ hugo server --source exampleSite
-Start building sites …
-hugo v0.111.3+extended darwin/arm64 BuildDate=unknown
-
-                   | EN
--------------------+-----
-  Pages            | 40
-  Paginator pages  |  0
-  Non-page files   |  0
-  Static files     | 12
-  Processed images |  0
-  Aliases          |  0
-  Sitemaps         |  1
-  Cleaned          |  0
-
-Built in 23 ms
-```
-
-## Performance
-
-Because of no additional JavaScript/CSS frameworks loading, the performance of
-Minimis is really good and scores highly on PageSpeed Insights:
-
-[![PageSpeed Insights](./.github/PageSpeed.png)](https://pagespeed.web.dev/analysis/https-kirillbobyrev-com/3rs7dkc9x6?form_factor=desktop)

@@ -5,6 +5,6 @@
       {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
     </time>
     {{ end }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
   </article>
 </li>

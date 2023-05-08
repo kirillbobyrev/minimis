@@ -53,7 +53,7 @@ blockquote {
   font-style: italic;
 }
 
-/* TODO: Inline code is still displayed poorly. */
+/* TODO: Inline code is still not displayed poorly. */
 code {
   font-family:
     ui-monospace,
