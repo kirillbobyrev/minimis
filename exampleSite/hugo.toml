@@ -1,9 +1,10 @@
-# baseURL = 'https://kirillbobyrev.github.io/minimis'
+baseURL = 'https://kirillbobyrev.github.io/'
 languageCode = 'en'
 enableEmoji = true
 theme = 'minimis'
 title = 'minimis'
 themesDir = '../..'
+# relativeURLs = true
 
 [params]
   author = 'Jon Doe'
