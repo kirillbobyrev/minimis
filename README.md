@@ -44,7 +44,7 @@ integration.
 In order to build the example site and test your changes, run
 
 ```shell
-$ env HUGO_THEMESDIR="../.." hugo server
+$ hugo server --source exampleSite
 Start building sites …
 hugo v0.111.3+extended darwin/arm64 BuildDate=unknown
 
