@@ -52,7 +52,7 @@ Here is a simple footnote[^1]. With some additional text after it.
 
 ## Code
 
-Some text `inline code` some more text.
+The code can be either inline `import discord.py` or multiline with the fences:
 
 ```c++
 class Foo {
@@ -68,7 +68,8 @@ int main() {
 }
 ```
 
-And after.
+Check out [extensions]({{< ref "./extensions.md#code-highlighting" >}}) for more
+code highlighting examples.
 
 ## Quotes
 
