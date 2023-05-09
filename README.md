@@ -33,9 +33,9 @@ implemented:
 - Google Analytics, Twitter cards support
 - RSS support
 - Favicons
-- Math rendering with KaTeX
-- Diagram rendering with Mermaid.js
-- Mastodon verification
+- Math rendering with [KaTeX](https://katex.org/)
+- Diagram rendering with [Mermaid.js](https://mermaid.js.org/)
+- Mastodon [verification](https://joinmastodon.org/verification)
 
 If you want to use this theme and are missing something, feel free to create a
 GitHub Issue.
@@ -61,7 +61,7 @@ $ hugo mod get -u
 ```
 
 That's it! You can now start editing content for your website. Check out an
-example config at [exampleSite/config.toml](./exampleSite/config.toml).
+example config at [exampleSite/config.toml](/exampleSite/config.toml).
 
 Alternatively, you can use the theme as a git submodule and put it under
 `themes/minimis`. Check out [Hugo
@@ -73,7 +73,7 @@ For deployment, I recommend using GitHub Pages. You can check out [Hugo
 docs](https://gohugo.io/hosting-and-deployment/hosting-on-github/) on how to set
 it up, but I think the provided GitHub Actions workflow is a bit too complicated
 there. I use the following workflow for the demo:
-[build-and-deploy.yml](./.github/workflows/build-and-deploy.yml) and almost the
+[build-and-deploy.yml](/.github/workflows/build-and-deploy.yml) and almost the
 same version for my own website:
 [github.com/kirillbobyrev.com/build-and-deploy.yml](https://github.com/kirillbobyrev/kirillbobyrev.com/blob/main/.github/workflows/build-and-deploy.yml).
 
@@ -83,30 +83,30 @@ same version for my own website:
 
 The example site is a good place to start. It showcases the features of the
 theme and is a good starting point for your own website. The source code for the
-example site is available under [exampleSite](./exampleSite/) and it is uploaded
-to <https://kirillbobyrev.github.io/minimis> on every commit to `main` branch
-through GitHub Actions workflow:
-[build-and-deploy.yml](./.github/workflows/build-and-deploy.yml).
+example site is available under [exampleSite](/exampleSite/) and it is uploaded
+to [kirillbobyrev.github.io/minimis](https://kirillbobyrev.github.io/minimis) on
+every commit to `main` branch through GitHub Actions workflow:
+[build-and-deploy.yml](/.github/workflows/build-and-deploy.yml).
 
 Whenever you make a change to the theme, you can test it by running
 
 ```shell
-hugo server --source exampleSite --watch
+$ hugo server --source exampleSite --watch
 ```
 
 if you are in the root directory of the repository or just
 
 ```shell
-hugo server --watch
+$ hugo server --watch
 ```
 
 If you are in the `exampleSite` directory.
 
 ### My personal website
 
-Minimis powers my personal website and blog at <https://kirillbobyrev.com>. I
-use it to write about software and hobbies. The source code for the website is
-available at
+Minimis powers my personal website and blog at
+[kirillbobyrev.com](https://kirillbobyrev.com). I use it to write about software
+and hobbies. The source code for the website is available at
 [github.com/kirillbobyrev/kirillbobyrev.com](https://github.com/kirillbobyrev/kirillbobyrev.com).
 It doesn't differ much from the example site, but it has some customizations
 such as resume page, favicons and custom domain usage. It is a good example of a
