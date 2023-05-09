@@ -72,6 +72,7 @@ hr {
 }
 
 pre:has(code) {
+  /* TODO: Add slightly more padding */
   padding: .5rem;
   overflow-x: auto;
   border-radius: 0.5rem;
@@ -93,7 +94,7 @@ time {
   text-decoration: none;
   font-size: xx-large;
   font-weight: bold;
-  line-height: 2.6;
+  line-height: 2;
 }
 
 .menu {
