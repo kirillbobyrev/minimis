@@ -64,6 +64,20 @@ graph LR;
     C -->|Two| E[Result two]
 ```
 
+### Unsafe
+
+Sometimes you might want to render plain HTML code:
+
+>```html
+>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
+>```
+
+Use `{{</* unsafe */>}} YOUR TEXT {{</* /unsafe */>}}` shortcode for that:
+
+>{{< unsafe >}}
+Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
+{{< /unsafe >}}
+
 ## Math
 
 If you want to use KaTeX-based math rendering in your posts, set `math = true`

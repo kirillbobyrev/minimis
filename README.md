@@ -36,46 +36,10 @@ implemented:
 - Math rendering with [KaTeX](https://katex.org/)
 - Diagram rendering with [Mermaid.js](https://mermaid.js.org/)
 - Mastodon [verification](https://joinmastodon.org/verification)
+- Adding HTML to Markdown pages
 
 If you want to use this theme and are missing something, feel free to create a
 GitHub Issue.
-
-## Using the theme
-
-### Adding to your site
-
-The easiest way to use the theme is through [Hugo
-modules](https://gohugo.io/hugo-modules/use-modules/):
-
-Add the following to your `hugo.toml`/`config.toml`:
-
-```toml
-theme = 'github.com/kirillbobyrev/minimis'
-```
-
-And then run
-
-```shell
-hugo mod init github.com/$YOUR_GITHUB_ACCOUNT/$REPO
-hugo mod get -u
-```
-
-That's it! You can now start editing content for your site. Check out an example
-config at [exampleSite/config.toml](/exampleSite/config.toml).
-
-Alternatively, you can use the theme as a git submodule and put it under
-`themes/minimis`. Check out [Hugo
-docs](https://gohugo.io/getting-started/quick-start/) for more information.
-
-### Deployment
-
-For deployment, I recommend using GitHub Pages. You can check out [Hugo
-docs](https://gohugo.io/hosting-and-deployment/hosting-on-github/) on how to set
-it up, but I think the provided GitHub Actions workflow is a bit too complicated
-there. I use the following workflow for the demo:
-[build-and-deploy.yml](/.github/workflows/build-and-deploy.yml) and almost the
-same version for my own site:
-[github.com/kirillbobyrev.com/build-and-deploy.yml](https://github.com/kirillbobyrev/kirillbobyrev.com/blob/main/.github/workflows/build-and-deploy.yml).
 
 ## Live demo
 
@@ -111,3 +75,57 @@ and hobbies. The source code for the site is available at
 It doesn't differ much from the example site, but it has some customizations
 such as resume page, favicons and custom domain usage. It is a good example of a
 real-world usage of minimis.
+
+## Using the theme
+
+[Hugo documentation](https://gohugo.io/documentation/) is very extensive and I
+can't recommend it enough to understand the whole system and how to use external
+themes.
+
+Here is a quick start guide if you are already familiar with Hugo and want to
+start using minimis:
+
+### Create a new site
+
+```shell
+hugo new site $YOUR_SITE_NAME
+```
+
+### Add the theme
+
+The easiest way to use the theme is through [Hugo
+modules](https://gohugo.io/hugo-modules/use-modules/):
+
+Add the following to your `hugo.toml`/`config.toml`:
+
+```toml
+theme = 'github.com/kirillbobyrev/minimis'
+```
+
+And then run
+
+```shell
+# Initialize hugo module for your site.
+hugo mod init github.com/$YOUR_GITHUB_ACCOUNT/$REPO
+# Fetch the theme.
+hugo mod get -u
+```
+
+Alternatively, you can use the theme as a git submodule and put it under
+`themes/minimis`. Check out [Hugo
+docs](https://gohugo.io/getting-started/quick-start/) for more information.
+
+### Configure the theme and your website
+
+The theme is configured through `params` in `hugo.toml`/`config.toml`. Check out
+[exampleSite/hugo.toml](/exampleSite/hugo.toml) for an example configuration of
+the demo site. For a full list of available options, check out `params` in
+[hugo.toml](/hugo.toml).
+
+### Deployment
+
+For deployment, I recommend using GitHub Pages. You can check out [Hugo
+docs](https://gohugo.io/hosting-and-deployment/hosting-on-github/) on how to set
+it up, but I think the provided GitHub Actions workflow is unnecessarily
+complicated. Here is the workflow that powers deployment of minimis demo:
+[build-and-deploy.yml](/.github/workflows/build-and-deploy.yml)
