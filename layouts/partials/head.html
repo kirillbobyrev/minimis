@@ -41,7 +41,14 @@
 <link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<link rel="stylesheet" href="{{.Site.BaseURL}}/css/style.css">
+{{ $style := resources.Get "css/style.css" }}
+{{ if hugo.IsProduction }}
+{{ $style = $style | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ else }}
+{{ $style := resources.Get "css/style.css" }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
 
 {{ with .Site.Params.mastodon }}
 <link href="https://social.example.com/@{{ . }}" rel="me">
