@@ -6,13 +6,20 @@
   # https://realfavicongenerator.net/, place under $HUGO_SITE_ROOT/static and
   # set `icons` to `true`.
   icons = false
-  dateDisplayFormat = "Jan 2, 2006"
+
   # Insert your Mastodon username for link verification.
   # (https://docs.joinmastodon.org/user/profile/#verification)
   # mastodon = "username"
+
   twitterCards = true
+
   opengraph = true
+
   # If you want to render LaTeX with KaTeX, either set "math = true" to enable
   # globally or set "math = true" on individual pages in font matter to reduce
   # loading time for pages without LaTeX. The latter is encouraged.
   math = false
+
+  # Controls how dates are displayed. See
+  # https://gohugo.io/functions/format/#go-time-format
+  dateDisplayFormat = "Jan 2, 2006"

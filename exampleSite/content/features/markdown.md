@@ -1,7 +1,7 @@
 +++
-title = "Markdown rendering"
+title = 'Markdown rendering'
 date = 2023-05-07
-tags = ["markdown", "features"]
+tags = ['markdown', 'features']
 math = true
 +++
 
@@ -68,8 +68,8 @@ int main() {
 }
 ```
 
-Check out [extensions]({{< ref "./extensions.md#code-highlighting" >}}) for more
-code highlighting examples.
+Check out [extensions]({{< ref "/features/extensions.md#code-highlighting" >}})
+for more code highlighting examples.
 
 ## Quotes
 

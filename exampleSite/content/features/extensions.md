@@ -1,7 +1,7 @@
 +++
-title = "Extensions"
+title = 'Extensions'
 date = 2023-05-08
-tags = ["hugo", "features"]
+tags = ['hugo', 'features']
 math = true
 +++
 
