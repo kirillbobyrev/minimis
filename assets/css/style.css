@@ -1,14 +1,17 @@
 /* Variables */
 
 :root {
+  /* Colors */
   --text-color: #333;
   --accent: #0969da;
-  --accent-bg: #d5e5ff;
+  --accent-background: #d5e5ff;
   --accent-light: #66a3ff;
-  --background: #f5f5f5;
+  --background: white;
   --muted: #c0c7d0;
   --muted-text: #8a8a8a;
-  --line-height: 1.4;
+  --code-background: #f5f6f9;
+  /* Typography */
+  --line-height: 1.5;
 }
 
 /* Base styles */
@@ -26,7 +29,7 @@ body {
     "Segoe UI Symbol";
   margin: auto;
   max-width: 45rem;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   line-height: var(--line-height);
   background-color: var(--background);
   color: var(--text-color);
@@ -77,6 +80,8 @@ pre:has(code) {
   overflow-x: auto;
   border-radius: 0.5rem;
   border: thin solid var(--muted);
+  /* Hugo will generate "style" with a background, I want to override it. */
+  background-color: var(--code-background) !important;
 }
 
 time {
@@ -141,7 +146,7 @@ time {
 /* I kind of like this, but it isn't perfect, maybe work on styling the tags? */
 .tag-cloud>li>a {
   color: var(--text-color);
-  background-color: var(--accent-bg);
+  background-color: var(--accent-background);
   border-radius: 14px;
   padding: 0 .5rem;
   text-decoration: none;
