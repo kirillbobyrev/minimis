@@ -78,7 +78,9 @@ for more code highlighting examples.
 Some text in-between.
 
 > This is a
+>
 > multi line
+>
 > quote
 
 [^1]: My footnote reference.

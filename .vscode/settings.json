@@ -5,8 +5,12 @@
     "disqus",
     "Kirill",
     "kirillbobyrev",
+    "linenos",
+    "linenostart",
     "minimis",
     "opengraph",
-    "pubdate"
+    "pubdate",
+    "shortcode",
+    "shortcodes"
   ]
 }
