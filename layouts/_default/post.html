@@ -2,7 +2,7 @@
   <article>
     {{ if .Date }}
     <time datetime="{{ .Date }}" pubdate>
-      {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
+      {{ .Date | dateFormat site.Params.dateDisplayFormat }}
     </time>
     {{ end }}
     <a href="{{ .Permalink }}">{{ .Title }}</a>

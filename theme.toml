@@ -8,7 +8,7 @@ demosite = 'https://kirillbobyrev.github.io/minimis'
 
 tags = ['blog', 'personal', 'minimal', 'clean', 'mobile']
 features = ['katex', 'tags', 'toc', 'mastodon']
-min_version = '0.111.3'
+min_version = '0.113.0'
 
 [author]
   name = 'Kirill Bobyrev'

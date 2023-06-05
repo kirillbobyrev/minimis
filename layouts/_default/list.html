@@ -12,7 +12,7 @@
 <!-- TODO: Move to a separate layout. -->
 <small>
   <ul class="tag-cloud">
-    {{ range .Site.Taxonomies.tags }}
+    {{ range site.Taxonomies.tags }}
     <li><a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a></li>
     {{ end }}
   </ul>

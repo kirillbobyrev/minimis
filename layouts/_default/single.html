@@ -7,7 +7,7 @@
   {{ if .Date }}
   <p>
     <time datetime="{{ .Date }}" pubdate>
-      {{ .Date | dateFormat .Site.Params.dateDisplayFormat }}
+      {{ .Date | dateFormat site.Params.dateDisplayFormat }}
     </time>
   </p>
   {{ end }}
@@ -27,7 +27,7 @@
 
 </article>
 
-{{ if and .IsPage .Site.Params.enableDisqus }}
+{{ if and .IsPage site.Params.enableDisqus }}
 {{ template "_internal/disqus.html" . }}
 {{ end }}
 

@@ -1,6 +1,6 @@
 {{ define "main" }}
 <ul>
-  {{ range .Site.Taxonomies.tags }}
+  {{ range site.Taxonomies.tags }}
   <li><a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>: {{ .Count }}</li>
   {{ end }}
 </ul>

@@ -26,6 +26,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
+          # TODO: Use matrix and also test with min version?
           hugo-version: "latest"
       - name: Build website
         run: hugo --gc --minify --source exampleSite --baseURL "${{ steps.pages.outputs.base_url }}/"
