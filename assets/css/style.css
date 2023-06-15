@@ -3,7 +3,7 @@
 :root {
   /* Colors */
   --text-color: #4a4a4a;
-  --heading-color: #000;
+  --text-accent-color: #000;
   --accent: #4285f4;
   --accent-light: #93a9d1;
   --tag-background: #e8f0fe;
@@ -105,7 +105,7 @@ time {
 /* Title and menu. */
 
 .blog-title {
-  color: var(--text-color);
+  color: var(--text-accent-color);
   text-decoration: none;
   font-size: xx-large;
   font-weight: bold;
@@ -121,7 +121,7 @@ time {
   text-decoration: none;
   font-size: large;
   padding-right: .3rem;
-  color: var(--text-color);
+  color: var(--text-accent-color);
   font-weight: 600;
   transition: color 0.3s;
 }
@@ -153,7 +153,6 @@ time {
   padding-right: .4rem;
 }
 
-/* I kind of like this, but it isn't perfect, maybe work on styling the tags? */
 .tag-cloud>li>a {
   color: var(--text-color);
   background-color: var(--tag-background);
@@ -195,7 +194,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: var(--text-accent-color);
 }
 
 /* Misc */
