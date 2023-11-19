@@ -6,8 +6,9 @@ title = 'minimis'
 themesDir = '../..'
 
 [params]
-  author = 'Jon Doe'
   description = 'minimalistic theme for Hugo'
+  [params.author]
+    name = 'Jon Doe'
 
 [markup]
   [markup.highlight]
