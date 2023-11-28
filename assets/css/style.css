@@ -33,6 +33,7 @@ body {
   line-height: var(--line-height);
   background-color: var(--background);
   color: var(--text-color);
+  font-size: 110%;
 }
 
 img {
