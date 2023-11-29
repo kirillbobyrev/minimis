@@ -192,3 +192,17 @@ h2::after {
 ul:has(li>input) {
   list-style: none;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid var(--muted);
+  padding: 0 1em;
+}
+
+th {
+  background-color: var(--code-background);
+}
