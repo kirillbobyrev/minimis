@@ -7,11 +7,10 @@
   --tag-background: #e8f0fe;
   --background: #fff;
   --muted: #BDBDBD;
-  --muted-text: #9E9E9E;
   --code-background: #f5f5f6;
 
   /* Typography */
-  --line-height: 1.5;
+  --line-height: 1.2;
 }
 
 /* Base styles */
@@ -46,17 +45,13 @@ a {
   color: var(--accent);
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 blockquote {
-  border-left: 4px solid var(--accent-light);
+  border-left: 3px solid var(--accent-light);
   padding-left: 1rem;
   font-style: italic;
 }
 
-/* TODO: Inline code is still not displayed poorly. */
+/* TODO: Inline code is still displayed poorly. */
 code {
   font-family:
     ui-monospace,
@@ -96,7 +91,6 @@ time {
   display: inline-block;
   width: 7rem;
   vertical-align: top;
-  color: var(--muted-text);
 }
 
 /* Title and menu. */
@@ -152,21 +146,7 @@ time {
 
 .tag-cloud>li>a {
   color: var(--text-color);
-  background-color: var(--tag-background);
-  border-radius: 14px;
-  padding: 0 .5rem;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.tag-cloud>li>a:hover {
-  background-color: var(--accent-light);
-  color: white;
-}
-
-main>small>.tag-cloud {
-  padding-top: .5rem;
-  line-height: 1.6;
 }
 
 /* Headings */

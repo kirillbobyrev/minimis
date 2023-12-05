@@ -21,5 +21,5 @@
   math = false
 
   # Controls how dates are displayed. See
-  # https://gohugo.io/functions/format/#go-time-format
-  dateDisplayFormat = "Jan 2, 2006"
+  # https://gohugo.io/functions/time/format/
+  dateDisplayFormat = "2 Jan, 2006"

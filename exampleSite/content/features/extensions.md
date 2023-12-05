@@ -1,6 +1,6 @@
 +++
 title = 'Extensions'
-date = 2023-05-08
+date = 2023-06-28
 tags = ['hugo', 'features']
 math = true
 +++
