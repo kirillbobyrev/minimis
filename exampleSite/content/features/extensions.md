@@ -82,11 +82,13 @@ Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 
 If you want to use KaTeX-based math rendering in your posts, set `math = true`
 in the post front matter or in the site config. Then you can use LaTeX syntax to
-write math equations (`$$` for display mode, `$` for inline mode):
+write math equations (`$$` for display mode, `\(` and `\)` for inline mode):
 
 $$
 i \hbar \frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat H \Psi(\mathbf{r},t)
 $$
+
+And also \(x = 42\) for inline equations.
 
 ## Default Hugo shortcodes
 

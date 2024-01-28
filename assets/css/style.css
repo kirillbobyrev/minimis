@@ -85,7 +85,7 @@ hr {
 pre:has(code), p>code {
   border: thin solid var(--muted);
   padding: .5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   overflow-x: auto;
 }
 
