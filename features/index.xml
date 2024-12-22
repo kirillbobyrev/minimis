@@ -1,6 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Features on minimis</title><link>https://kirillbobyrev.github.io/minimis/features/</link><description>Recent content in Features on minimis</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kirillbobyrev.github.io/minimis/features/index.xml" rel="self" type="application/rss+xml"/><item><title>Extensions</title><link>https://kirillbobyrev.github.io/minimis/features/extensions/</link><pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate><guid>https://kirillbobyrev.github.io/minimis/features/extensions/</guid><description>Use {{&amp;lt; toc &amp;gt;}} Hugo shortcode to generate table of contents:
-Table Of Contents Checklist Code highlighting Mermaid diagrams Unsafe Math Default Hugo shortcodes Gist YouTube Twitter Checklist TODO Completed Code highlighting Use highlight shortcode or Markdown-style code fences with attributes to highlight regions, set line numbers etc.
-go {linenos=inline,hl_lines=[8,&amp;#34;15-17&amp;#34;],linenostart=199} 199// GetTitleFunc returns a func that can be used to transform a string to 200// title case. 201// 202// The supported styles are 203// 204// - &amp;#34;Go&amp;#34; (strings.</description></item><item><title>Markdown rendering</title><link>https://kirillbobyrev.github.io/minimis/features/markdown/</link><pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate><guid>https://kirillbobyrev.github.io/minimis/features/markdown/</guid><description>This is a demo of the basic Markdown rendering.
-Headings H2 H3 H4 H5 Text styling Bold and italic.
-Lists Unordered Dogs Cats Abyssinian Siamese Cows Ordered Build a blog. Find good static site generator. Select a theme. Shouldn&amp;rsquo;t be too complicated. Shouldn&amp;rsquo;t take too long to setup. Congrats! Footnote Here is a simple footnote1. With some additional text after it.
-Table Column 1 Column 2 Value 1 Value 2 Code The code can be either inline import discord.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Features on minimis</title><link>https://kirillbobyrev.github.io/minimis/features/</link><description>Recent content in Features on minimis</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kirillbobyrev.github.io/minimis/features/index.xml" rel="self" type="application/rss+xml"/><item><title>Extensions</title><link>https://kirillbobyrev.github.io/minimis/features/extensions/</link><pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate><guid>https://kirillbobyrev.github.io/minimis/features/extensions/</guid><description>&lt;p>Use &lt;code>{{&amp;lt; toc &amp;gt;}}&lt;/code> &lt;a href="https://gohugo.io/content-management/shortcodes/">Hugo
+shortcode&lt;/a> to generate table
+of contents:&lt;/p>
+&lt;div>
+ &lt;h2>Table Of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#checklist">Checklist&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#code-highlighting">Code highlighting&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#mermaid-diagrams">Mermaid diagrams&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#unsafe">Unsafe&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#math">Math&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#default-hugo-shortcodes">Default Hugo shortcodes&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#gist">Gist&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#youtube">YouTube&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#twitter">Twitter&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h2 id="checklist">Checklist&lt;/h2>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> TODO&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Completed&lt;/li>
+&lt;/ul>
+&lt;h2 id="code-highlighting">Code highlighting&lt;/h2>
+&lt;p>Use highlight
+&lt;a href="https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode">shortcode&lt;/a>
+or Markdown-style code fences with attributes to highlight regions, set line
+numbers etc.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>go {linenos=inline,hl_lines=[8,&amp;#34;15-17&amp;#34;],linenostart=199}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;display:grid;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// GetTitleFunc returns a func that can be used to transform a string to
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// title case.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// The supported styles are
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// - &amp;#34;Go&amp;#34; (strings.Title)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// - &amp;#34;AP&amp;#34; (see https://www.apstylebook.com/)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex; background-color:#e5e5e5">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// - &amp;#34;Chicago&amp;#34; (see https://www.chicagomanualofstyle.org/home.html)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">// If an unknown or empty style is provided, AP style is what you get.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209&lt;/span>&lt;span>&lt;span style="color:#998;font-style:italic">&lt;/span>&lt;span style="color:#000;font-weight:bold">func&lt;/span> &lt;span style="color:#900;font-weight:bold">GetTitleFunc&lt;/span>(style &lt;span style="color:#458;font-weight:bold">string&lt;/span>) &lt;span style="color:#000;font-weight:bold">func&lt;/span>(s &lt;span style="color:#458;font-weight:bold">string&lt;/span>) &lt;span style="color:#458;font-weight:bold">string&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">switch&lt;/span> strings.&lt;span style="color:#900;font-weight:bold">ToLower&lt;/span>(style) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">211&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">case&lt;/span> &lt;span style="color:#d14">&amp;#34;go&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">212&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">return&lt;/span> strings.Title
+&lt;/span>&lt;/span>&lt;span style="display:flex; background-color:#e5e5e5">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">213&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">case&lt;/span> &lt;span style="color:#d14">&amp;#34;chicago&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex; background-color:#e5e5e5">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">214&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">return&lt;/span> transform.&lt;span style="color:#900;font-weight:bold">NewTitleConverter&lt;/span>(transform.ChicagoStyle)
+&lt;/span>&lt;/span>&lt;span style="display:flex; background-color:#e5e5e5">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">215&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">default&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">216&lt;/span>&lt;span> &lt;span style="color:#000;font-weight:bold">return&lt;/span> transform.&lt;span style="color:#900;font-weight:bold">NewTitleConverter&lt;/span>(transform.APStyle)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">217&lt;/span>&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">218&lt;/span>&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mermaid-diagrams">Mermaid diagrams&lt;/h3>
+&lt;p>You can use &lt;a href="https://mermaid-js.github.io/mermaid/#/">Mermaid&lt;/a> diagrams in your
+posts. Just write the diagram definition in a fenced code block with &lt;code>mermaid&lt;/code>
+language identifier:&lt;/p></description></item><item><title>Markdown rendering</title><link>https://kirillbobyrev.github.io/minimis/features/markdown/</link><pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate><guid>https://kirillbobyrev.github.io/minimis/features/markdown/</guid><description>&lt;p>This is a demo of the basic Markdown rendering.&lt;/p>
+&lt;h2 id="headings">Headings&lt;/h2>
+&lt;h2 id="h2">H2&lt;/h2>
+&lt;h3 id="h3">H3&lt;/h3>
+&lt;h4 id="h4">H4&lt;/h4>
+&lt;h5 id="h5">H5&lt;/h5>
+&lt;h2 id="text-styling">Text styling&lt;/h2>
+&lt;p>&lt;strong>Bold&lt;/strong> and &lt;em>italic&lt;/em>.&lt;/p>
+&lt;h2 id="lists">Lists&lt;/h2>
+&lt;h3 id="unordered">Unordered&lt;/h3>
+&lt;ul>
+&lt;li>Dogs&lt;/li>
+&lt;li>Cats
+&lt;ul>
+&lt;li>Abyssinian&lt;/li>
+&lt;li>Siamese&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cows&lt;/li>
+&lt;/ul>
+&lt;h3 id="ordered">Ordered&lt;/h3>
+&lt;ol>
+&lt;li>Build a blog.
+&lt;ol>
+&lt;li>Find good static site generator.&lt;/li>
+&lt;li>Select a theme.
+&lt;ul>
+&lt;li>Shouldn&amp;rsquo;t be too complicated.&lt;/li>
+&lt;li>Shouldn&amp;rsquo;t take too long to setup.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Congrats!&lt;/li>
+&lt;/ol>
+&lt;h2 id="footnote">Footnote&lt;/h2>
+&lt;p>Here is a simple footnote&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. With some additional text after it.&lt;/p>
+&lt;h2 id="table">Table&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Column 1&lt;/th>
+ &lt;th>Column 2&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Value 1&lt;/td>
+ &lt;td>Value 2&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="code">Code&lt;/h2>
+&lt;p>The code can be either inline &lt;code>import discord.py&lt;/code> or multiline with the fences:&lt;/p></description></item></channel></rss>
