@@ -4,53 +4,58 @@
 <base href="{{ site.BaseURL }}">
 
 <title>
-  {{ with .Title }}
-  {{ . }} |
+  {{ if .Title }}
+    {{ .Title }} |
   {{ end }}
+
   {{ site.Title }}
 </title>
 
 {{ with site.Params }}
-{{ with .author }}
-<meta name="author" content="{{ . }}">
-{{ end }}
-{{ with .description }}
-<meta name="description" content="{{ . }}">
-{{ end }}
-{{ with .keywords }}
-<meta name="keywords" content={{ delimit . "," }}>
-{{ end }}
+  {{ with .author }}
+    <meta name="author" content="{{ . }}">
+  {{ end }}
+  {{ with .description }}
+    <meta name="description" content="{{ . }}">
+  {{ end }}
+  {{ with .keywords }}
+    <meta name="keywords" content={{ delimit . "," }}>
+  {{ end }}
 {{ end }}
 
 {{ if site.Params.icons }}
-{{ partial "icons.html" . }}
+  {{ partial "icons.html" . }}
 {{ end }}
 
 {{ template "_internal/google_analytics.html" . }}
 
 {{ if site.Params.twitterCards }}
-{{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
 {{ end }}
 
 {{ if site.Params.opengraph }}
-{{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/opengraph.html" . }}
 {{ end }}
 
 {{ range .AlternativeOutputFormats -}}
-{{ printf `
-<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
 {{ end -}}
 
 <!-- Minify and hash the stylesheet in production environments -->
 {{ $style := resources.Get "css/style.css" }}
+
 {{ if hugo.IsProduction }}
-{{ $style = $style | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ $style = $style | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ else }}
-{{ $style := resources.Get "css/style.css" }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ $style := resources.Get "css/style.css" }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ end }}
 
 {{ if or .Params.math site.Params.math }}
-{{ partialCached "math.html" . }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+    integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+    integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
 {{ end }}

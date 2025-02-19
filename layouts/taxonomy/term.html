@@ -1,12 +1,16 @@
 {{ define "main" }}
+
 {{ .Content }}
+
 {{ $tag := .Title }}
+
 <ul class="posts">
   {{ range .Pages }}
-  {{ .Render "post" }}
+    {{ .Render "post" }}
   {{ end }}
 </ul>
 <p>
-Filtered by <a href="{{ site.BaseURL }}/tags/{{ $tag | urlize }}">#{{ $tag }}</a>
+  Filtered by <a href="{{ site.BaseURL }}/tags/{{ $tag | urlize }}">#{{ $tag }}</a>
 </p>
+
 {{ end }}

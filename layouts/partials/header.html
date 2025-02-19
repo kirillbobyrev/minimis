@@ -1,6 +1,9 @@
-{{ with site }}
-<a href="{{ .BaseURL }}" class="blog-title">
-  {{ .Title }}
+<a href="{{ site.BaseURL }}" class="blog-title">
+  {{ site.Title }}
 </a>
-{{- partial "menu.html" . -}}
-{{ end }}
+
+<nav class="menu">
+  {{ range site.Menus.main }}
+    <a href="{{ .URL }}" class="menu-link">{{ .Name }}</a>
+  {{ end }}
+</nav>
