@@ -2,7 +2,6 @@
 shortcode&lt;/a> to generate table
 of contents:&lt;/p>
 &lt;div>
- &lt;h2>Table Of Contents&lt;/h2>
  &lt;nav id="TableOfContents">
  &lt;ul>
  &lt;li>&lt;a href="#checklist">Checklist&lt;/a>&lt;/li>
