@@ -34,8 +34,6 @@ implemented:
 - RSS support
 - Favicons
 - Math rendering with [KaTeX](https://katex.org/)
-- Diagram rendering with [Mermaid.js](https://mermaid.js.org/)
-- Mastodon [verification](https://joinmastodon.org/verification)
 - Adding HTML to Markdown pages
 
 If you want to use this theme and are missing something, feel free to create a

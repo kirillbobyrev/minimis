@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <base href="{{ site.BaseURL }}">
 
@@ -41,6 +41,7 @@
 <link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
 {{ end -}}
 
+<!-- Minify and hash the stylesheet in production environments -->
 {{ $style := resources.Get "css/style.css" }}
 {{ if hugo.IsProduction }}
 {{ $style = $style | minify | fingerprint }}
@@ -48,10 +49,6 @@
 {{ else }}
 {{ $style := resources.Get "css/style.css" }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-{{ end }}
-
-{{ with site.Params.mastodon }}
-<link href="https://social.example.com/@{{ . }}" rel="me">
 {{ end }}
 
 {{ if or .Params.math site.Params.math }}

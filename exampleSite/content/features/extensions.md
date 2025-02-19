@@ -50,20 +50,6 @@ func GetTitleFunc(style string) func(s string) string {
 }
 ```
 
-### Mermaid diagrams
-
-You can use [Mermaid](https://mermaid-js.github.io/mermaid/#/) diagrams in your
-posts. Just write the diagram definition in a fenced code block with `mermaid`
-language identifier:
-
-```mermaid
-graph LR;
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
-
 ### Unsafe
 
 Sometimes you might want to render plain HTML code:
